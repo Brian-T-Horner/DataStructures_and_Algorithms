@@ -6,7 +6,7 @@
 
 
 #ifndef SinglyLinkedList_H
-#define DSinglyLinkedList_H
+#define SinglyLinkedList_H
 
 template <typename T>
 class SinglyLinkedList {
@@ -18,7 +18,7 @@ public:
     void addNode(const T& e);
     void removeNode();
 private:
-    SNode* head;
+    SNode<T>* head;
 };
 
 

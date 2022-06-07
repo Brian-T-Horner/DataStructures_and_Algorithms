@@ -11,8 +11,12 @@ add_executable(DataStructures_Algorithms main.cpp
         # Dynamic Array
         C++/Data_Structures/DynamicArray.cpp
 
-        # Linked List
+        # Singly Linked List
         C++/Data_Structures/Singly_Linked_List
+        # Doubly Linked List
+
+        #Circularly Linked List
+        C++/Data_Structures/Circularly_Linked_List
 # Python Algorithms
 
 # Python Data Structures

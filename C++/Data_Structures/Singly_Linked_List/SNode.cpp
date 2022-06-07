@@ -6,10 +6,7 @@
 
 #include "SNode.h"
 template <typename T>
-SNode<T>::SNode(T newData) {
-    next = nullptr;
-    data = newData;
-}
+SNode<T>::SNode() {next = nullptr;}
 
 template <typename T>
-SNode<T>::~SNode<T>() {}
+SNode<T>::~SNode() {}

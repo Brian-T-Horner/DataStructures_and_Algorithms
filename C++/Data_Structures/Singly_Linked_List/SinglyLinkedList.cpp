@@ -9,12 +9,12 @@
 #include "SNode.h"
 
 template <typename T>
-SinglyLinkedList<T>::SinglyLinkedList<typename T>() {
+SinglyLinkedList<T>::SinglyLinkedList() {
     head = nullptr;
 }
 
 template <typename T>
-SinglyLinkedList<T>::~SinglyLinkedList<T>() {
+SinglyLinkedList<T>::~SinglyLinkedList() {
     while(!empty()){
         removeNode();
     }
