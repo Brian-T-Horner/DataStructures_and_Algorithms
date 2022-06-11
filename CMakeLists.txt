@@ -7,7 +7,11 @@ add_executable(DataStructures_Algorithms main.cpp
 
  # C++ Algorithms
         C++/Algorithms/SumOfArray.cpp C++/Algorithms/ReverseArray.cpp
+        C++/Algorithms/ReverseArray.cpp C++/Algorithms/BubbleSort.cpp
+        C++/Algorithms/RecursiveFactorial.cpp
+
 # C++ Data Structures
+
         # Dynamic Array
         C++/Data_Structures/DynamicArray.cpp
 
@@ -17,6 +21,7 @@ add_executable(DataStructures_Algorithms main.cpp
 
         #Circularly Linked List
         C++/Data_Structures/Circularly_Linked_List
+
 # Python Algorithms
 
 # Python Data Structures

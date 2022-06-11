@@ -5,12 +5,12 @@
 //
 
 #ifndef DynamicArray_H
-#define DyanmicArray_H
+#define DynamicArray_H
 
 
 class DynamicArray {
 
 };
-
+//TODO
 
 #endif
