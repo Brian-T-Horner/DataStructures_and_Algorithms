@@ -10,6 +10,7 @@ add_executable(DataStructures_Algorithms main.cpp
         C++/Algorithms/ReverseArray.cpp C++/Algorithms/BubbleSort.cpp
         C++/Algorithms/RecursiveFactorial.cpp C++/Algorithms/RecursiveFibonacci.cpp
         C++/Algorithms/InsertionSort.cpp C++/Algorithms/SortedEntryDynamicArray.cpp
+        C++/Algorithms/isUnique.cpp
 
 # C++ Data Structures
 
