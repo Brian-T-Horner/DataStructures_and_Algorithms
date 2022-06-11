@@ -18,10 +18,14 @@ add_executable(DataStructures_Algorithms main.cpp
 
         # Singly Linked List
         C++/Data_Structures/Singly_Linked_List/SinglyLinkedList.cpp
+        C++/Data_Structures/Singly_Linked_List/SNode.cpp
+
         # Doubly Linked List
+        C++/Data_Structures/Doubly_Linked_List/DoublyLinkedList.cpp
+        C++/Data_Structures/Doubly_Linked_List/DNode.cpp
 
         #Circularly Linked List
-        C++/Data_Structures/Circularly_Linked_List/CircularlyLinkedList.cpp
+        C++/Data_Structures/Circularly_Linked_List
 
 # Python Algorithms
 
