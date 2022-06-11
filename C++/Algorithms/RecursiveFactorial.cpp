@@ -4,6 +4,8 @@
 // Edit History:
 // 6/6/2022 - Initial Version
 
+// Recursive Factorial Function
+
 int recursiveFactorial(int n){
     if(n==0){
         return 1;

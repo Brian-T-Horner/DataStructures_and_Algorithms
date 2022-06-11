@@ -7,6 +7,7 @@
 
 #ifndef SinglyLinkedList_H
 #define SinglyLinkedList_H
+#include "SNode.h"
 
 template <typename T>
 class SinglyLinkedList {
@@ -14,7 +15,7 @@ public:
     SinglyLinkedList();
     ~SinglyLinkedList();
     bool empty() const;
-    const T& head() const;
+    const T& front() const;
     void addNode(const T& e);
     void removeNode();
 private:

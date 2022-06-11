@@ -7,6 +7,8 @@
 #ifndef SNode_H
 #define SNode_H
 
+//template<typename T> class SinglyLinkedList;
+
 template <typename T>
 class SNode {
 public:
@@ -15,7 +17,8 @@ public:
 private:
     SNode<T>* next;
     T data;
-    friend class SinglyLinkedList<T>; // provide SinglyLinkedList access
+    template <typename U> friend class SinglyLinkedList;
+    // provide SinglyLinkedList access
 };
 
 

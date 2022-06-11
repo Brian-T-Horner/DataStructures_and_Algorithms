@@ -24,7 +24,7 @@ template <typename T>
 bool SinglyLinkedList<T>::empty() const{return head == nullptr;}
 
 template <typename T>
-const T &SinglyLinkedList<T>::head() const {return head->data;}
+const T &SinglyLinkedList<T>::front() const {return head->data;}
 
 template<typename T>
 void SinglyLinkedList<T>::addNode(const T &e) {
