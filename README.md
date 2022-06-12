@@ -12,7 +12,8 @@ Check out the code with the links below!
 * [C++ Data Structures](https://github.com/Brian-T-Horner/DataStructures_and_Algorithms/tree/master/C%2B%2B/Data_Structures)
 
 <h3> Python </h3>
-
+* Python ALgorithms
+* Python Data Structures
 
 <h3 align="center"> 💬&nbsp;Please feel free to reach out through any of the social media below: </h3>
 
@@ -31,4 +32,4 @@ Check out the code with the links below!
 </p>
 
 
-<h3> Check out the rest of my [profile](https://github.com/Brian-T-Horner), [general reposititories] (https://github.com/Brian-T-Horner?tab=repositories), or my previous [school work](https://github.com/BrianHorner-School-Work).
+Check out the rest of my [profile](https://github.com/Brian-T-Horner), [general reposititories] (https://github.com/Brian-T-Horner?tab=repositories), or my previous [school work](https://github.com/BrianHorner-School-Work).
