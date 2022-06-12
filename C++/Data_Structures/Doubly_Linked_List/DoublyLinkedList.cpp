@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/11/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #include "DoublyLinkedList.h"
 
@@ -13,6 +15,20 @@ DoublyLinkedList<T>::DoublyLinkedList(){
     trailer = new DNode<T>;
     header->next = trailer;
     trailer->next = header;
+}
+template <typename T>
+DoublyLinkedList<T>::DoublyLinkedList(DoublyLinkedList<T> const & oldDLList){
+    //TODO::
+}
+
+template <typename T>
+DoublyLinkedList<T> & DoublyLinkedList<T>::operator=(DoublyLinkedList<T>const &otherDLList){
+    //TODO::
+}
+
+template <typename T>
+bool DoublyLinkedList<T>::operator==(DoublyLinkedList<T> const &comparisonDLList){
+//TODO::
 }
 
 template<typename T>

@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/12/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #include "DequeStack.h"
 #include <iostream>
@@ -11,13 +13,19 @@ template <typename T>
 DequeStack<T>::DequeStack(): deque() {}
 
 template <typename T>
-DequeStack<T>::DequeStack(DequeStack<T> const& oldStack){}
+DequeStack<T>::DequeStack(DequeStack<T> const& oldStack){
+    //TODO::
+}
 
 template <typename T>
-DequeStack<T>& DequeStack<T>::operator=(DequeStack<T> const& otherStack){}
+DequeStack<T>& DequeStack<T>::operator=(DequeStack<T> const& otherStack){
+    //TODO::
+}
 
 template <typename T>
-bool DequeStack<T>::operator==(DequeStack<T> const & comparisonStack){}
+bool DequeStack<T>::operator==(DequeStack<T> const & comparisonStack){
+    //TODO::
+}
 
 template <typename T>
 DequeStack<T>::~DequeStack() {

@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/12/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #include "NodeList.h"
 
@@ -14,6 +16,22 @@ NodeList<T>::NodeList() {
     header->next = trailer;
     trailer->prev = header;
 }
+
+template <typename T>
+NodeList<T>::NodeList(NodeList<T> const & oldList){
+    //TODO::
+}
+
+template <typename T>
+NodeList<T>& NodeList<T>::operator=(NodeList<T> const & oldList){
+    //TODO::
+}
+
+template <typename T>
+bool NodeList<T>::operator==(NodeList<T> const & comparisonList){
+    //TODO::
+}
+
 
 template <typename T>
 NodeList<T>::~NodeList() {

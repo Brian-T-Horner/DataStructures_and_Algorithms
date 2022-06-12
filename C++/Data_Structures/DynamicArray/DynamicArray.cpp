@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/11/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #include "DynamicArray.h"
 
@@ -16,6 +18,22 @@ DynamicArray<T>::DynamicArray(int size){
     length = size;
     nextIndex = 0;
 }
+
+template<typename T>
+DynamicArray<T>::DynamicArray(DynamicArray<T> const & oldArray){
+    //TODO::
+}
+
+template<typename T>
+DynamicArray<T>& DynamicArray<T>::operator=(DynamicArray<T> const &otherArray){
+    //TODO::
+}
+
+template<typename T>
+bool DynamicArray<T>::operator==(DynamicArray<T> const & comparisonArray){
+    //TODO::
+}
+
 
 template <typename T>
 DynamicArray<T>::~DynamicArray() {delete [] array;}

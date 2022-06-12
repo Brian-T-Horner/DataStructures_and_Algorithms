@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/11/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #ifndef CircularQueue_H
 #define CircularQueue_H
@@ -13,6 +15,9 @@ template <typename T>
 class CircularQueue {
 public:
     CircularQueue();
+    CircularQueue(CircularQueue<T>& oldQueue);
+    CircularQueue<T>& operator=(CircularQueue<T> const & otherQueue);
+    bool operator==(CircularQueue<T> const & comparisonQueue);
     ~CircularQueue();
     int size() const;
     bool empty() const;

@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/11/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 
 #include "LinkedStack.h"
@@ -10,6 +12,21 @@
 
 template <typename T>
 LinkedStack<T>::LinkedStack(): list(), numElements(0){}
+
+template <typename T>
+LinkedStack<T>::LinkedStack(LinkedStack<T> const & oldStack){
+    //TODO::
+}
+
+template <typename T>
+LinkedStack<T>& LinkedStack<T>::operator=(LinkedStack<T> const & oldStack){
+    //TODO::
+}
+
+template <typename T>
+bool LinkedStack<T>::operator==(LinkedStack<T> const & comparisonStack){
+    //TODO::
+}
 
 template <typename T>
 LinkedStack<T>::~LinkedStack<T>() {

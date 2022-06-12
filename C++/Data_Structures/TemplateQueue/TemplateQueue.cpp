@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/11/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #include "TemplateQueue.h"
 #include "../../Exceptions/QueueEmpty/QueueEmpty.h"
@@ -11,6 +13,22 @@
 template <typename T>
 TemplateQueue<T>::TemplateQueue(int capacity): array(new
 T[capacity]),capacity(capacity), numElements(0), frontIndex(0), rearIndex(0) {}
+
+template <typename T>
+TemplateQueue<T>::TemplateQueue(TemplateQueue<T> const & oldQueue){
+    //TODO::
+}
+
+template <typename T>
+TemplateQueue<T>& TemplateQueue<T>::operator=(TemplateQueue<T> const &oldQueue){
+    //TODO::
+}
+
+template <typename T>
+bool TemplateQueue<T>::operator==(TemplateQueue<T> const & comparisonQueue){
+    //TODO::
+}
+
 
 template <typename T>
 TemplateQueue<T>::~TemplateQueue(){

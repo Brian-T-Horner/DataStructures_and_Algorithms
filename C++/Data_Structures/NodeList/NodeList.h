@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/12/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #ifndef NodeList_H
 #define NodeList_H
@@ -12,6 +14,9 @@ template <typename T>
 class NodeList {
 public:
     NodeList();
+    NodeList(NodeList<T> const & oldList);
+    NodeList<T>& operator=(NodeList<T> const & oldList);
+    bool operator==(NodeList<T> const & comparisonList);
     ~NodeList();
     int size() const;
     bool empty() const;

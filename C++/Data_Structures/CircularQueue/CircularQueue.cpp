@@ -3,12 +3,29 @@
 // Author: Brian Horner
 // Edit History:
 // 6/11/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #include "CircularQueue.h"
 #include "../../Exceptions/QueueEmpty/QueueEmpty.h"
 
 template <typename T>
 CircularQueue<T>::CircularQueue(): list(), numElements(0){}
+
+template <typename T>
+CircularQueue<T>::CircularQueue(CircularQueue<T>& oldQueue){
+    //TODO::
+}
+
+template <typename T>
+CircularQueue<T>& CircularQueue<T>::operator=(CircularQueue<T> const &otherQueue){
+    //TODO::
+}
+
+template <typename T>
+bool CircularQueue<T>::operator==(CircularQueue<T> const & comparisonQueue){
+    //TODO::
+}
 
 template <typename T>
 CircularQueue<T>::~CircularQueue() {

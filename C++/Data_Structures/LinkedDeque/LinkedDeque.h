@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/12/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #ifndef LinkedDeque_H
 #define LinkedDeque_H
@@ -13,6 +15,9 @@ template <typename T>
 class LinkedDeque {
 public:
     LinkedDeque();
+    LinkedDeque(LinkedDeque<T> const & oldDeque);
+    LinkedDeque<T>& operator=(LinkedDeque<T> const & otherDeque);
+    bool operator==(LinkedDeque<T> const & comparisonDeque);
     ~LinkedDeque();
     int size() const;
     bool empty() const;

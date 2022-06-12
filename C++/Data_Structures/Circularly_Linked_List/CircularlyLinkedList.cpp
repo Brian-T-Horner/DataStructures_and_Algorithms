@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/6/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #include "CircularlyLinkedList.h"
 #include "CNode.h"
@@ -11,16 +13,19 @@ template <typename T> // Constructor
 CircularlyLinkedList<T>::CircularlyLinkedList() {cursor= nullptr;}
 
 template <typename T>
-CircularlyLinkedList<T>::CircularlyLinkedList(CircularlyLinkedList<T>&
-        oldCList){}
+CircularlyLinkedList<T>::CircularlyLinkedList(CircularlyLinkedList<T>&oldCList){
+    //TODO::
+}
 
 template <typename T>
-CircularlyLinkedList<T>& CircularlyLinkedList<T>::operator=
-        (CircularlyLinkedList<T> const &otherCList){}
+CircularlyLinkedList<T>& CircularlyLinkedList<T>::operator=(CircularlyLinkedList<T> const &otherCList){
+    //TODO::
+}
 
 template <typename T>
-bool CircularlyLinkedList<T>::operator==(CircularlyLinkedList<T> const &
-        compareCList){}
+bool CircularlyLinkedList<T>::operator==(CircularlyLinkedList<T> const &compareCList){
+    //TODO::
+}
 
 
 template<typename T> // Destructor

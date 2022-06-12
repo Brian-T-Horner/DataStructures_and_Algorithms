@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/6/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 
 #ifndef SinglyLinkedList_H
@@ -13,6 +15,9 @@ template <typename T>
 class SinglyLinkedList {
 public:
     SinglyLinkedList();
+    SinglyLinkedList(SinglyLinkedList<T> const & oldList);
+    SinglyLinkedList<T>& operator=(SinglyLinkedList<T> const & oldList);
+    bool operator==(SinglyLinkedList<T> const & comparisonList);
     ~SinglyLinkedList();
     bool empty() const;
     const T& front() const;

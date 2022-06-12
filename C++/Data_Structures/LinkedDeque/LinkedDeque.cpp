@@ -3,12 +3,29 @@
 // Author: Brian Horner
 // Edit History:
 // 6/12/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #include "LinkedDeque.h"
 #include "../../Exceptions/DequeEmpty/DequeEmpty.h"
 
 template <typename T>
 LinkedDeque<T>::LinkedDeque(): numElements(0), list() {}
+
+template <typename T>
+LinkedDeque<T>::LinkedDeque(LinkedDeque<T> const & oldDeque){
+    //TODO::
+}
+
+template <typename T>
+LinkedDeque<T>& LinkedDeque<T>::operator=(LinkedDeque<T> const & otherDeque){
+    //TODO::
+}
+
+template <typename T>
+bool LinkedDeque<T>::operator==(LinkedDeque<T> const & comparisonDeque){
+    //TODO::
+}
 
 template <typename T>
 LinkedDeque<T>::~LinkedDeque() {

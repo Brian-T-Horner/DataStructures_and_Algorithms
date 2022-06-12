@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/11/2022 - Initial Version
+// 6/12/2022 - Added template for copy constructor, assignment operator and
+// equality operator
 
 #ifndef DoublyLinkedList_H
 #define DoublyLinkedList_H
@@ -13,6 +15,9 @@ template <typename T>
 class DoublyLinkedList {
 public:
     DoublyLinkedList();
+    DoublyLinkedList(DoublyLinkedList<T> const & oldDLList);
+    DoublyLinkedList<T> & operator=(DoublyLinkedList<T> const & otherDLList);
+    bool operator==(DoublyLinkedList<T> const & comparisonDLList);
     ~DoublyLinkedList();
     bool empty() const;
     const T& front() const;
