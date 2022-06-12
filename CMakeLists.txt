@@ -12,7 +12,8 @@ add_executable(DataStructures_Algorithms main.cpp
         C++/Algorithms/InsertionSort.cpp C++/Algorithms/SortedEntryDynamicArray.cpp
         C++/Algorithms/isUnique.cpp C++/Algorithms/prefixAverages.cpp
         C++/Algorithms/power.cpp C++/Algorithms/arrayFind.cpp
-        C++/Algorithms/ReverseDLinkedList.cpp
+        C++/Algorithms/ReverseDLinkedList.cpp C++/Algorithms/reverseVectorWithStack.cpp
+
 
 # C++ Data Structures
 
@@ -33,8 +34,14 @@ add_executable(DataStructures_Algorithms main.cpp
         C++/Data_Structures/Doubly_Linked_List/DoublyLinkedList.cpp
         C++/Data_Structures/Doubly_Linked_List/DNode.cpp
 
-        #Circularly Linked List
-        C++/Data_Structures/Circularly_Linked_List
+        # Circularly Linked List
+        C++/Data_Structures/Circularly_Linked_List/CircularlyLinkedList.cpp
+
+        # Template Queue
+        C++/Data_Structures/TemplateQueue/TemplateQueue.cpp
+
+        # Circular Linked List Queue
+        C++/Data_Structures/CircularQueue/CircularQueue.cpp
 
 # Python Algorithms
 
