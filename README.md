@@ -15,6 +15,7 @@ Check out the code with the links below!
 * Python ALgorithms <br>
 * Python Data Structures
 
+<br>
 Check out the rest of my [profile](https://github.com/Brian-T-Horner), [general reposititories](https://github.com/Brian-T-Horner?tab=repositories), or my previous [school work](https://github.com/BrianHorner-School-Work).
 
 <h3 align="center"> 💬&nbsp;Please feel free to reach out through any of the social media below: </h3>
