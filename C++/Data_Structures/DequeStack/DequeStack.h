@@ -13,6 +13,9 @@ template <typename T>
 class DequeStack {
 public:
     DequeStack();
+    DequeStack(DequeStack<T> const& oldStack);
+    DequeStack<T>& operator=(DequeStack<T> const& otherStack);
+    bool operator==(DequeStack<T> const & comparisonStack);
     ~DequeStack();
     int size() const;
     bool empty() const;

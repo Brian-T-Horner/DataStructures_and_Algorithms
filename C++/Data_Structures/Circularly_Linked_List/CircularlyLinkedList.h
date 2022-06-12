@@ -13,6 +13,9 @@ template<typename T>
 class CircularlyLinkedList {
 public:
     CircularlyLinkedList();
+    CircularlyLinkedList(CircularlyLinkedList<T>& oldCList);
+    CircularlyLinkedList<T>& operator=(CircularlyLinkedList<T> const &otherCList);
+    bool operator==(CircularlyLinkedList<T> const & compareCList);
     ~CircularlyLinkedList();
     bool empty() const;
     const T& front() const;

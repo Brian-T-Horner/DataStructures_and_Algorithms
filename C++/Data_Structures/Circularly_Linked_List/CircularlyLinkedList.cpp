@@ -10,6 +10,19 @@
 template <typename T> // Constructor
 CircularlyLinkedList<T>::CircularlyLinkedList() {cursor= nullptr;}
 
+template <typename T>
+CircularlyLinkedList<T>::CircularlyLinkedList(CircularlyLinkedList<T>&
+        oldCList){}
+
+template <typename T>
+CircularlyLinkedList<T>& CircularlyLinkedList<T>::operator=
+        (CircularlyLinkedList<T> const &otherCList){}
+
+template <typename T>
+bool CircularlyLinkedList<T>::operator==(CircularlyLinkedList<T> const &
+        compareCList){}
+
+
 template<typename T> // Destructor
 CircularlyLinkedList<T>::~CircularlyLinkedList() {
     while(!empty()){

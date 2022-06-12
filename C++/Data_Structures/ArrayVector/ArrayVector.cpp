@@ -3,11 +3,51 @@
 // Author: Brian Horner
 // Edit History:
 // 6/12/2022 - Initial Version
+// 6/12/2022 - Added destructor, copy constructor, assignment operator and
+// comparison operator
 
 #include "ArrayVector.h"
 
 template <typename T>
 ArrayVector<T>::ArrayVector(): capacity(0), numElements(0), array(nullptr) {}
+
+template <typename T>
+ArrayVector<T>::ArrayVector(ArrayVector<T>& oldVector): array(new T[oldVector
+.capacity]), capacity(oldVector.capacity), numElements(oldVector.size()){
+    for(int i{0}; i<size(); i++){
+        array[i] = oldVector[i];
+    }
+}
+
+template <typename T>
+ArrayVector<T>& ArrayVector<T>::operator=(ArrayVector<T> const & otherVector){
+    if(otherVector!=this){
+        capacity = otherVector.capacity;
+        numElements = otherVector.size();
+        T* newArray = new T[capacity];
+        delete [] this->array;
+        for(int i{0}; i<size(); i++){
+            newArray[i] = otherVector[i];
+        }
+    }
+    return *this;
+}
+
+template <typename T>
+bool ArrayVector<T>::operator==(ArrayVector<T> const & comparisonVector){
+    if(capacity!= comparisonVector.capacity || size()!= comparisonVector.size
+    ()){
+        return false;
+    }else{
+        for(int i{0}; i<size(); i++){
+            if(array[i] != comparisonVector[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
 
 template <typename T>
 ArrayVector<T>::~ArrayVector() {delete [] array;}

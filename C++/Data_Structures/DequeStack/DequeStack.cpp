@@ -11,6 +11,15 @@ template <typename T>
 DequeStack<T>::DequeStack(): deque() {}
 
 template <typename T>
+DequeStack<T>::DequeStack(DequeStack<T> const& oldStack){}
+
+template <typename T>
+DequeStack<T>& DequeStack<T>::operator=(DequeStack<T> const& otherStack){}
+
+template <typename T>
+bool DequeStack<T>::operator==(DequeStack<T> const & comparisonStack){}
+
+template <typename T>
 DequeStack<T>::~DequeStack() {
     while(!empty()){
         pop();

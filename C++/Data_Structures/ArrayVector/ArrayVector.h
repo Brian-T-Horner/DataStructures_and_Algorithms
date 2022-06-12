@@ -3,6 +3,8 @@
 // Author: Brian Horner
 // Edit History:
 // 6/12/2022 - Initial Version
+// 6/12/2022 - Added destructor, copy constructor, assignment operator and
+// comparison operator
 
 #ifndef ArrayVector_H
 #define ArrayVector_H
@@ -12,6 +14,9 @@ template <typename T>
 class ArrayVector {
 public:
     ArrayVector();
+    ArrayVector(ArrayVector<T>& oldVector);
+    ArrayVector<T>& operator=(ArrayVector<T> const & otherVector);
+    bool operator==(ArrayVector<T> const & comparisonVector);
     ~ArrayVector();
     int size() const;
     bool empty() const;
