@@ -12,7 +12,7 @@ Check out the code with the links below!
 * [C++ Data Structures](https://github.com/Brian-T-Horner/DataStructures_and_Algorithms/tree/master/C%2B%2B/Data_Structures)
 
 <h3> Python </h3>
-* Python ALgorithms <br>
+* Python Algorithms <br>
 * Python Data Structures
 
 
