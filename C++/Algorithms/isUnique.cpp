@@ -6,7 +6,6 @@
 
 #include <vector>
 
-
 // O(2^n) with recursive calls run amok
 template <typename T>
 bool isUniqueRecursive(const std::vector<T> & array, int start, int end){

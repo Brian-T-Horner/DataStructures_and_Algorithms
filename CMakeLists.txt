@@ -11,7 +11,7 @@ add_executable(DataStructures_Algorithms main.cpp
         C++/Algorithms/RecursiveFactorial.cpp C++/Algorithms/RecursiveFibonacci.cpp
         C++/Algorithms/InsertionSort.cpp C++/Algorithms/SortedEntryDynamicArray.cpp
         C++/Algorithms/isUnique.cpp C++/Algorithms/prefixAverages.cpp
-        C++/Algorithms/power.cpp
+        C++/Algorithms/power.cpp C++/Algorithms/arrayFind.cpp
 
 # C++ Data Structures
 
