@@ -47,6 +47,9 @@ add_executable(DataStructures_Algorithms main.cpp
         # Doubly Linked List Deque
         C++/Data_Structures/LinkedDeque/LinkedDeque.cpp
 
+        # Stack w/ deque wrapper
+        C++/Data_Structures/DequeStack/DequeStack.cpp
+
 # Python Algorithms
 
 # Python Data Structures
