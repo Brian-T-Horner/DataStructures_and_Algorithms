@@ -11,7 +11,11 @@ template <typename T>
 CircularQueue<T>::CircularQueue(): list(), numElements(0){}
 
 template <typename T>
-CircularQueue<T>::~CircularQueue() {}
+CircularQueue<T>::~CircularQueue() {
+    while(!empty()){
+        dequeue();
+    }
+}
 
 template <typename T>
 int CircularQueue<T>::size() const {return numElements;}

@@ -11,7 +11,11 @@ template <typename T>
 DequeStack<T>::DequeStack(): deque() {}
 
 template <typename T>
-DequeStack<T>::~DequeStack() {}
+DequeStack<T>::~DequeStack() {
+    while(!empty()){
+        pop();
+    }
+}
 
 template <typename T>
 int DequeStack<T>::size() const {return deque.size();}

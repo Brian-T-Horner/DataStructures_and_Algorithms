@@ -12,8 +12,12 @@ template <typename T>
 LinkedStack<T>::LinkedStack(): list(), numElements(0){}
 
 template <typename T>
-LinkedStack<T>::~LinkedStack<T>() {}
-// linked list destructor takes care of nodes
+LinkedStack<T>::~LinkedStack<T>() {
+    while(!empty()){
+        pop();
+    }
+}
+
 
 template <typename T>
 int LinkedStack<T>::size() const {return numElements;}

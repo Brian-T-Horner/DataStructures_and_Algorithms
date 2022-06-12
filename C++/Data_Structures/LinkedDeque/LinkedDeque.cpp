@@ -11,7 +11,11 @@ template <typename T>
 LinkedDeque<T>::LinkedDeque(): numElements(0), list() {}
 
 template <typename T>
-LinkedDeque<T>::~LinkedDeque() {}
+LinkedDeque<T>::~LinkedDeque() {
+    while(!empty()){
+        removeFront();
+    }
+}
 
 template <typename T>
 int LinkedDeque<T>::size() const {return numElements;}
