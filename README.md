@@ -1,4 +1,4 @@
-<h3 align="center"> 🔑 &nbsp; Welcome to my collection of Data Structures and Algorithms in C++ and Python </h3>
+<h3 align="center"> 👋  &nbsp; Welcome to my collection of Data Structures and Algorithms in C++ and Python </h3>
  
 I am in the process of reading [The Art of Computer Programming](https://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/ref=sr_1_1?qid=1655005267&refinements=p_lbr_one_browse-bin%3ADonald+E.+Knuth&s=books&sr=1-1), [Data Structures & Algorithms in C++](https://www.amazon.com/gp/product/0470383275/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), and [Data Structures and Algorithms in Python](https://www.amazon.com/gp/product/1118290275/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). 
 
@@ -14,6 +14,8 @@ Check out the code with the links below!
 <h3> Python </h3>
 * Python ALgorithms
 * Python Data Structures
+
+Check out the rest of my [profile](https://github.com/Brian-T-Horner), [general reposititories](https://github.com/Brian-T-Horner?tab=repositories), or my previous [school work](https://github.com/BrianHorner-School-Work).
 
 <h3 align="center"> 💬&nbsp;Please feel free to reach out through any of the social media below: </h3>
 
@@ -32,4 +34,4 @@ Check out the code with the links below!
 </p>
 
 
-Check out the rest of my [profile](https://github.com/Brian-T-Horner), [general reposititories] (https://github.com/Brian-T-Horner?tab=repositories), or my previous [school work](https://github.com/BrianHorner-School-Work).
+
