@@ -44,6 +44,9 @@ add_executable(DataStructures_Algorithms main.cpp
         # Circular Linked List Queue
         C++/Data_Structures/CircularQueue/CircularQueue.cpp
 
+        # Doubly Linked List Deque
+        C++/Data_Structures/LinkedDeque/LinkedDeque.cpp
+
 # Python Algorithms
 
 # Python Data Structures
