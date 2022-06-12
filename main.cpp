@@ -23,6 +23,11 @@
 #include "C++/Data_Structures/Singly_Linked_List/SinglyLinkedList.h"
 #include "C++/Data_Structures/TemplateQueue/TemplateQueue.h"
 
+// Node List
+#include "C++/Data_Structures/NodeList/NodeList.h"
+#include "C++/Data_Structures/NodeList/LNode.h"
+#include "C++/Data_Structures/NodeList/Iterator.h"
+
 
 int main() {
     std::cout << "Hello, World!" << std::endl;

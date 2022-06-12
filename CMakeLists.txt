@@ -63,6 +63,11 @@ add_executable(DataStructures_Algorithms main.cpp
         # Extendable Array Vector
         C++/Data_Structures/ArrayVector/ArrayVector.cpp
 
+        # Node List
+        C++/Data_Structures/NodeList/Iterator.cpp
+        C++/Data_Structures/NodeList/LNode.cpp
+        C++/Data_Structures/NodeList/NodeList.cpp
+
 # Python Algorithms
 
 # Python Data Structures
