@@ -12,12 +12,12 @@ template <typename T>
 class CNode {
 public:
     CNode();
-    ~Cnode();
+    ~CNode();
 private:
     T data;
     CNode<T>* next;
 
-    friend class CircularlyLinkedList<T>;
+    template <typename B> friend class CircularlyLinkedList;
     //provide Circularly Linked List access
 };
 

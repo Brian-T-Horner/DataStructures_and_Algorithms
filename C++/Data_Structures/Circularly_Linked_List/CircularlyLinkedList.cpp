@@ -8,7 +8,7 @@
 #include "CNode.h"
 
 template <typename T> // Constructor
-CircularlyLinkedList<T>::CircularlyLinkedList<T>() {cursor= nullptr;}
+CircularlyLinkedList<T>::CircularlyLinkedList() {cursor= nullptr;}
 
 template<typename T> // Destructor
 CircularlyLinkedList<T>::~CircularlyLinkedList() {

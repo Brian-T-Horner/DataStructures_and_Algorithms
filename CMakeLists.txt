@@ -36,6 +36,7 @@ add_executable(DataStructures_Algorithms main.cpp
 
         # Circularly Linked List
         C++/Data_Structures/Circularly_Linked_List/CircularlyLinkedList.cpp
+        C++/Data_Structures/Circularly_Linked_List/CNode.cpp
 
         # Template Queue
         C++/Data_Structures/TemplateQueue/TemplateQueue.cpp

@@ -7,6 +7,8 @@
 #ifndef CircularlyLinkedList_H
 #define CircularlyLinkedList_H
 
+#include "CNode.h"
+
 template<typename T>
 class CircularlyLinkedList {
 public:

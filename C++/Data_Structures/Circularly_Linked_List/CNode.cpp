@@ -9,4 +9,4 @@ template <typename T>
 CNode<T>::CNode() {next = nullptr;}
 
 template<typename T>
-SNode<T>::~SNode<T>(){}
+CNode<T>::~CNode<T>(){}
