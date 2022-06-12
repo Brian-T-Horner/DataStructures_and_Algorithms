@@ -14,9 +14,9 @@ public:
     ~ArrayStack();
     int size() const;
     bool empty() const;
-    const T& top() const; // throw(StackEmpty);
-    void push(const T& e); //throw(StackFull
-    void pop(); // throw(StackEmpty);
+    const T& top() const noexcept(false);
+    void push(const T& e) noexcept(false);
+    void pop() noexcept(false);
 private:
     T* array;
     int capacity; // total number of elements allowed in stack

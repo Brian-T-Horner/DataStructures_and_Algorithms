@@ -16,9 +16,9 @@ public:
     ~CircularQueue();
     int size() const;
     bool empty() const;
-    const T& front() const; //throw(QueueEmpty);
+    const T& front() const noexcept(false);
     void enqueue(const T& e);
-    void dequeue(); //throw(QueueEmpty);
+    void dequeue() noexcept(false);
 private:
     CircularlyLinkedList<T> list;
     int numElements;

@@ -5,7 +5,8 @@
 // 6/11/2022 -  Initial Version
 
 #include "ArrayStack.h"
-#include <iostream>
+#include "../../Exceptions/StackFull/StackFull.h"
+#include "../../Exceptions/StackEmpty/StackEmpty.h"
 
 template <typename T>
 ArrayStack<T>::ArrayStack(int capacity): array(new T[capacity]), capacity
@@ -25,7 +26,7 @@ bool ArrayStack<T>::empty() const {return (t<0);}
 template <typename T>
 const T &ArrayStack<T>::top() const {
     if(empty()){
-        std::cout << "Stack Empty exception thrown here." <<std::endl;
+        throw StackEmpty("top of empty stack");
     }
     return array[t];
 }
@@ -33,7 +34,7 @@ const T &ArrayStack<T>::top() const {
 template <typename T>
 void ArrayStack<T>::push(const T &e) {
     if(size() == capacity){
-        std::cout << "Stack Full exception thrown here." <<std::endl;
+        throw StackFull("pushing onto full stack");
     }
     array[++t] = e;
 }
@@ -41,7 +42,7 @@ void ArrayStack<T>::push(const T &e) {
 template <typename T>
 void ArrayStack<T>::pop() {
     if(empty()){
-        std::cout << "Stack Empty exception thrown here" <<std::endl;
+        throw StackEmpty("popping out of empty stack");
     }
     --t;
 }

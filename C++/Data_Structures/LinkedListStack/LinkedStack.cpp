@@ -6,7 +6,7 @@
 
 
 #include "LinkedStack.h"
-#include <iostream>
+#include "../../Exceptions/StackEmpty/StackEmpty.h"
 
 template <typename T>
 LinkedStack<T>::LinkedStack(): list(), numElements(0){}
@@ -29,7 +29,7 @@ T& LinkedStack<T>::peak() {
 template <typename T>
 const T& LinkedStack<T>::top() const {
     if(empty()){
-        std::cout << "Throw StackEmpty exception here."<<std::endl;
+        throw StackEmpty("top of empty stack");
     }
     return list.front();
 }
@@ -42,5 +42,8 @@ void LinkedStack<T>::push(const T& e){
 
 template <typename T>
 void LinkedStack<T>::pop(){
+    if(empty()){
+        throw StackEmpty("popping off of empty stack");
+    }
     list.removeNode();
 }

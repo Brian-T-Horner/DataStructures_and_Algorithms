@@ -4,6 +4,15 @@ project(DataStructures_Algorithms)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(DataStructures_Algorithms main.cpp
+# Exceptions
+        C++/Exceptions/Runtime/RuntimeException.cpp
+        C++/Exceptions/IndexOutOfBounds/IndexOutOfBounds.cpp
+        C++/Exceptions/QueueEmpty/QueueEmpty.cpp
+        C++/Exceptions/QueueFull/QueueFull.cpp
+        C++/Exceptions/DequeEmpty/DequeEmpty.cpp
+        C++/Exceptions/StackEmpty/StackEmpty.cpp
+        C++/Exceptions/StackFull/StackFull.cpp
+
 
  # C++ Algorithms
         C++/Algorithms/SumOfArray.cpp C++/Algorithms/ReverseArray.cpp

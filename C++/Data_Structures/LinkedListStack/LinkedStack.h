@@ -16,9 +16,9 @@ class LinkedStack {
     int size() const;
     bool empty() const;
     T& peak();
-    const T& top() const; // throw(StackEmpty);
+    const T& top() const noexcept(false);
     void push(const T& e);
-    void pop(); // throw(StackEmpty);
+    void pop() noexcept(false);
 private:
     SinglyLinkedList<T> list;
     int numElements;

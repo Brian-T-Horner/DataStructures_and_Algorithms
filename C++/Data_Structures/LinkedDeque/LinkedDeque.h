@@ -16,12 +16,12 @@ public:
     ~LinkedDeque();
     int size() const;
     bool empty() const;
-    const T& front() const; // throw(DequeEmpty);
-    const T& back() const; // throw(DequeEmpty);
+    const T& front() const noexcept(false);
+    const T& back() const noexcept(false);
     void insertFront(const T& e);
     void insertBack(const T& e);
-    void removeFront(); //throw(DequeEmpty);
-    void removeBack(); // throw(DequeEmpty);
+    void removeFront() noexcept(false);
+    void removeBack() noexcept(false);
 private:
     DoublyLinkedList<T> list;
     int numElements;

@@ -1,4 +1,14 @@
 #include <iostream>
+// Exception Includes
+#include "C++/Exceptions/IndexOutOfBounds/IndexOutOfBounds.h"
+#include "C++/Exceptions/Runtime/RuntimeException.h"
+#include "C++/Exceptions/QueueEmpty/QueueEmpty.h"
+#include "C++/Exceptions/QueueFull/QueueFull.h"
+#include "C++/Exceptions/DequeEmpty/DequeEmpty.h"
+#include "C++/Exceptions/StackEmpty/StackEmpty.h"
+#include "C++/Exceptions/StackFull/StackFull.h"
+
+
 
 // Data Structures Includes
 #include "C++/Data_Structures/ArrayStack/ArrayStack.h"

@@ -5,7 +5,6 @@
 // 6/12/2022 - Initial Version
 
 #include "ArrayVector.h"
-#include <iostream>
 
 template <typename T>
 ArrayVector<T>::ArrayVector(): capacity(0), numElements(0), array(nullptr) {}
@@ -22,8 +21,7 @@ bool ArrayVector<T>::empty() const {return size() == 0;}
 template <typename T>
 T& ArrayVector<T>::operator[](int i) {
     if(i<0 || i>= numElements){
-        std::cout << "IndexOutOfBounds exception thrown here."
-        <<std::endl;
+        throw IndexOutOfBounds("illegal index in function at ()");
     }
     return array[i];
 }
@@ -31,7 +29,7 @@ T& ArrayVector<T>::operator[](int i) {
 template <typename T>
 T& ArrayVector<T>::at(int i) {
     if(i<0 || i>=numElements){
-        std::cout << "IndexOutOfBounds exception thrown here." <<std::endl;
+        throw IndexOutOfBounds("illegal index in function at()");
     }
     return array[i];
 }

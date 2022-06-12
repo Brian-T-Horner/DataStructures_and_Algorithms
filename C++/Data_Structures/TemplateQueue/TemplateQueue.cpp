@@ -5,7 +5,8 @@
 // 6/11/2022 - Initial Version
 
 #include "TemplateQueue.h"
-#include <iostream>
+#include "../../Exceptions/QueueEmpty/QueueEmpty.h"
+#include "../../Exceptions/QueueFull/QueueFull.h"
 
 template <typename T>
 TemplateQueue<T>::TemplateQueue(int capacity): array(new
@@ -25,7 +26,7 @@ bool TemplateQueue<T>::empty() const {return (numElements<1);}
 template<typename T>
 const T& TemplateQueue<T>::front() const {
     if(empty()){
-        std::cout << "QueueEmpty exception thrown here." <<std::endl;
+        throw QueueEmpty("front of empty queue");
     }
     return array[frontIndex];
 }
@@ -33,7 +34,7 @@ const T& TemplateQueue<T>::front() const {
 template <typename T>
 void TemplateQueue<T>::dequeue() {
     if(empty()){
-        std::cout << "QueueEmpty exception thrown here." <<std::endl;
+        throw QueueEmpty("dequeue of empty queue");
     }
     frontIndex = (frontIndex+1) % numElements;
     numElements-=1;
@@ -43,7 +44,7 @@ void TemplateQueue<T>::dequeue() {
 template <typename T>
 void TemplateQueue<T>::enqueue(const T &e) {
     if(numElements == capacity){
-        std::cout << "QueueFull exception thrown here." <<std::endl;
+        throw QueueFull("enqueue of full queue");
     }
     array[rearIndex] = e;
     rearIndex = (rearIndex+1)&numElements;
