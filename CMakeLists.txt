@@ -16,6 +16,9 @@ add_executable(DataStructures_Algorithms main.cpp
 
 # C++ Data Structures
 
+        # Template ArrayStack
+        C++/Data_Structures/ArrayStack/ArrayStack.cpp
+
         # Dynamic Array
         C++/Data_Structures/DynamicArray/DynamicArray.cpp
 
