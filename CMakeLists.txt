@@ -50,6 +50,9 @@ add_executable(DataStructures_Algorithms main.cpp
         # Stack w/ deque wrapper
         C++/Data_Structures/DequeStack/DequeStack.cpp
 
+        # Extendable Array Vector
+        C++/Data_Structures/ArrayVector/ArrayVector.cpp
+
 # Python Algorithms
 
 # Python Data Structures

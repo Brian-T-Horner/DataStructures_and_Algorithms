@@ -2,6 +2,7 @@
 
 // Data Structures Includes
 #include "C++/Data_Structures/ArrayStack/ArrayStack.h"
+#include "C++/Data_Structures/ArrayVector/ArrayVector.h"
 #include "C++/Data_Structures/Circularly_Linked_List/CircularlyLinkedList.h"
 #include "C++/Data_Structures/CircularQueue/CircularQueue.h"
 #include "C++/Data_Structures/DequeStack/DequeStack.h"
