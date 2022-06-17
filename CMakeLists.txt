@@ -22,7 +22,7 @@ add_executable(DataStructures_Algorithms main.cpp
         C++/Algorithms/isUnique.cpp C++/Algorithms/prefixAverages.cpp
         C++/Algorithms/power.cpp C++/Algorithms/arrayFind.cpp
         C++/Algorithms/ReverseDLinkedList.cpp C++/Algorithms/reverseVectorWithStack.cpp
-        C++/Algorithms/VectorSum.cpp
+        C++/Algorithms/VectorSum.cpp C++/Algorithms/binarySearch.cpp
 
 
 # C++ Data Structures

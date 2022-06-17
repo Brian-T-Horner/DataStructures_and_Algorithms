@@ -30,6 +30,22 @@
 
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    int x = 3;
+    int y = 4;
+    std::cout << "x: " << x << std::endl;
+    std::cout << "x MEM: " << &x << std::endl;
+    std::cout << "y: " <<y<<std::endl;
+    std::cout << "y MEM: " <<&y<<std::endl;
+    y = x;
+    std::cout << "x: " << x << std::endl;
+    std::cout << "x MEM:" <<&x<<std::endl;
+    std::cout << "y: " <<y << std::endl;
+    std::cout << "y MEM: " <<&y<<std::endl;
+    x = 7;
+    std::cout << "x: " << x << std::endl;
+    std::cout << "x MEM: " <<&x<<std::endl;
+    std::cout << "y: " <<y << std::endl;
+    std::cout << "y MEM: " <<&y<<std::endl;
+//    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
