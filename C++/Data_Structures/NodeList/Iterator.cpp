@@ -10,7 +10,7 @@ template <typename T>
 Iterator<T>::Iterator(LNode<T> *u): v(u) {}
 
 template <typename T>
-Iterator<T>::~Iterator<T>() {}
+Iterator<T>::~Iterator() {}
 
 template <typename T>
 T &Iterator<T>::operator*() {return v->data;}

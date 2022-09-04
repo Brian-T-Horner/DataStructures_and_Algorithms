@@ -11,4 +11,4 @@ template <typename T>
 DNode<T>::DNode(){next= nullptr; prev= nullptr;}
 
 template <typename T>
-DNode<T>::~DNode<T>() {}
+DNode<T>::~DNode() {}
